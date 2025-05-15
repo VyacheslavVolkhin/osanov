@@ -110,9 +110,11 @@
 }
 .product-item-detail-info-container:first-child a.btn.product-item-detail-buy-button {
   background: #d7efff;
+  border-color: #d7efff;
 }
 .product-item-detail-info-container:last-child a.btn.product-item-detail-buy-button {
   background: #faddbc;
+  border-color: #faddbc;
 }
 .btn-action-close {
   display: block;
