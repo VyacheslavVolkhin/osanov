@@ -1,0 +1,3510 @@
+@font-face {
+  font-family: "GT Eesti Pro Display Regular";
+  src: url("fonts/GTEestiProDisplayRegular.otf");
+}
+@font-face {
+  font-family: "GT Eesti Pro Display Medium";
+  src: url("fonts/GTEestiProDisplayMediumRegular.otf");
+}
+@font-face {
+  font-family: "GT Eesti Pro Display Light";
+  src: url("fonts/GTEestiProDisplayLightRegular.otf");
+}
+@font-face {
+  font-family: "GT Eesti Pro Display Bold";
+  src: url("fonts/GTEestiProDisplayBoldRegular.otf");
+}
+.up {
+  text-transform: uppercase;
+}
+.none {
+  text-decoration: none;
+}
+.th {
+  font-weight: 100;
+}
+.el {
+  font-weight: 200;
+}
+.l {
+  font-family: "GT Eesti Pro Display Light";
+}
+.reg {
+  font-family: "GT Eesti Pro Display Regular";
+}
+.med {
+  font-family: "GT Eesti Pro Display Medium";
+}
+.sb {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.eb {
+  font-weight: 800;
+}
+.black {
+  font-weight: 900;
+}
+.un {
+  text-decoration: underline;
+}
+.in {
+  display: inline-block;
+}
+.vam {
+  vertical-align: middle;
+}
+.rel {
+  position: relative;
+}
+.bl {
+  display: block;
+}
+.abs {
+  position: absolute;
+}
+.tr {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.try {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.trx {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tc {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dn {
+  display: none;
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+.taj {
+  text-align: justify;
+}
+.it {
+  font-style: italic;
+}
+.sn {
+  font-style: normal;
+}
+.b0 {
+  border: 0;
+}
+.bn {
+  background: none;
+}
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
+.wa {
+  width: auto;
+}
+.p0 {
+  padding: 0;
+}
+.m0 {
+  margin: 0;
+}
+.poi {
+  cursor: pointer;
+}
+.auto {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+}
+.noup {
+  text-transform: none;
+}
+.fix {
+  position: fixed;
+}
+.tn {
+  transform: none;
+}
+.bf {
+  background: #fff;
+}
+.cf {
+  color: #fff;
+}
+.c0 {
+  color: #000;
+}
+.ap {
+  appearance: none;
+}
+.nw {
+  white-space: nowrap;
+}
+.ma {
+  margin: 0 auto;
+}
+.oh {
+  overflow: hidden;
+}
+.pen {
+  pointer-events: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #fff;
+  overflow-x: hidden;
+}
+body,
+th,
+td {
+  font-family: "GT Eesti Pro Display Regular";
+  font-size: 14px;
+  color: #000;
+}
+body,
+form,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img,
+table {
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  padding: 0;
+}
+a {
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+a:hover {
+  text-decoration: none;
+}
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 0;
+  font-family: "GT Eesti Pro Display Regular";
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+button:focus::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder,
+button:focus::-moz-placeholder,
+select:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder,
+button:focus:-moz-placeholder,
+select:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder,
+button:focus:-ms-input-placeholder,
+select:focus:-ms-input-placeholder {
+  color: transparent;
+}
+button,
+input[type='submit'] {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+  border: 0;
+}
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.an {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section,
+header,
+footer,
+nav,
+main {
+  display: block;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1420px;
+}
+* {
+  outline: none!important;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+.header {
+  padding: 12px 0;
+}
+.header .top {
+  margin-bottom: 16px;
+}
+.header .top ul {
+  margin-top: 4px;
+}
+.header .top ul li {
+  display: inline-block;
+}
+.header .top ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.header .top ul li a {
+  display: block;
+  text-decoration: none;
+  color: #606972;
+  line-height: 20px;
+}
+.header .top .contacts * {
+  vertical-align: middle;
+}
+.header .top .contacts a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.header .top .contacts a.city {
+  margin-right: 32px;
+  padding-left: 28px;
+  line-height: 20px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/city.svg') no-repeat left;
+}
+.header .top .contacts a.phone {
+  line-height: 20px;
+  margin-right: 12px;
+}
+.header .top .contacts a.chat {
+  width: 47px;
+  height: 28px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  background: #def4bf;
+  color: #449c2e;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.header .top .contacts .mess {
+  display: inline-block;
+  padding-right: 2px;
+  vertical-align: middle;
+}
+.header .top .contacts .mess a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.header .logo {
+  margin-top: 8px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 28px;
+  font-family: "GT Eesti Pro Display Medium";
+  line-height: 27.28px;
+}
+.header .menu-button {
+  width: 23px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/menu-button.svg') no-repeat center;
+  display: none;
+}
+.header .catalog {
+  position: relative;
+  z-index: 12;
+}
+.header .catalog .catalog-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  width: 121px;
+  height: 40px;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 24px;
+  background: #7471ff;
+  position: relative;
+}
+.header .catalog .catalog-link.active span {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/catalog-link2.svg') no-repeat center;
+}
+.header .catalog .catalog-link span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 16px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/catalog-link.svg');
+  margin: -3px 4px 0 0;
+}
+.header .catalog .window {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  z-index: 10;
+  border-radius: 24px;
+  width: 681px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 22px 0;
+  display: none;
+}
+.header .catalog .window .tabNavigation {
+  width: 40%;
+}
+.header .catalog .window .tabNavigation li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 32px;
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+}
+.header .catalog .window .tabNavigation li a.selected {
+  color: #7471ff;
+}
+.header .catalog .window .tabNavigation li a.selected:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #7471ff;
+}
+.header .catalog .window .tab-content {
+  width: 60%;
+}
+.header .catalog .window .tab-content .flex ul {
+  width: 50%;
+}
+.header .catalog .window .tab-content ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 16px;
+}
+.header form {
+  position: relative;
+  margin-top: 2px;
+  width: 810px;
+  height: 36px;
+}
+.header form.active {
+  position: relative;
+  z-index: 18;
+}
+.header form input[type='text'] {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ebebeb;
+  border-radius: 24px;
+  padding: 0 16px;
+}
+.header form button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/search.svg');
+}
+.header .login {
+  width: 108px;
+  height: 40px;
+  border-radius: 24px;
+  background: #dfdff5;
+  color: #6c57ed;
+}
+.header .login span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/login.svg');
+  margin: -2px 4px 0 0;
+}
+.header .links {
+  margin-top: 8px;
+}
+.header .links a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.header .links a:not(:last-child) {
+  margin-right: 12px;
+}
+.header .links a:nth-child(1) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/header-link1.svg') no-repeat center;
+}
+.header .links a:nth-child(2) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/header-link2.svg') no-repeat center;
+}
+.header .links a:nth-child(3) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/header-link3.svg') no-repeat center;
+}
+.header .links a span {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  color: #fff;
+  width: 10px;
+  height: 10px;
+  line-height: 12px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ff224a;
+  font-size: 8px;
+}
+.catalogbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.searchbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 14;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.top-menu {
+  padding: 16px 0 42px;
+}
+.top-menu .list {
+  position: relative;
+}
+.top-menu .list:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) -3.371%, #ffffff 43.82%);
+}
+.top-menu .list a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 38px;
+  background: #efeff1;
+  padding: 10px 16px;
+  margin-right: 16px;
+}
+.top-menu .list a.actions {
+  background: #ffe1bd;
+  color: #ff8a00;
+}
+.top-menu .list a.sale {
+  background: #f1e2e8;
+  color: #ff758e;
+}
+.top-menu .list a.new {
+  background: #def4bf;
+  color: #449c2e;
+}
+.top-menu .list .slick-prev {
+  display: none !important;
+}
+.top-menu .list .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 0;
+  font-size: 0;
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/next.svg');
+}
+.index-top-sliders {
+  padding-bottom: 50px;
+}
+.index-top-sliders .slider1 {
+  width: 49%;
+}
+.index-top-sliders .slider1 .item {
+  height: 412px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  position: relative;
+}
+.index-top-sliders .slider1 .item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.index-top-sliders .slider1 .slick-dots {
+  text-align: center;
+  padding-top: 8px;
+}
+.index-top-sliders .slider1 .slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.index-top-sliders .slider1 .slick-dots li.slick-active button {
+  background: #9593f3;
+  width: 24px;
+}
+.index-top-sliders .slider1 .slick-dots li button {
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #efeff1;
+}
+.index-top-sliders .slider2 {
+  width: 49%;
+}
+.index-top-sliders .slider2 .list {
+  margin: 0 -8px;
+}
+.index-top-sliders .slider2 .list .item {
+  margin: 0 8px;
+}
+.index-top-sliders .slider2 .list .item .block {
+  height: 198px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+}
+.index-top-sliders .slider2 .list .item .block:not(:last-child) {
+  margin-bottom: 16px;
+}
+.index-top-sliders .slider2 .list .item .block .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 24px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 12px;
+  line-height: 16px;
+  z-index: 3;
+}
+.index-top-sliders .slider2 .list .item .block .text h3 {
+  margin-top: 7px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.index-top-sliders .slider2 .list .item .block img {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.index-top-sliders .slider2 .list .slick-dots {
+  text-align: center;
+  padding-top: 8px;
+}
+.index-top-sliders .slider2 .list .slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.index-top-sliders .slider2 .list .slick-dots li.slick-active button {
+  background: #9593f3;
+  width: 24px;
+}
+.index-top-sliders .slider2 .list .slick-dots li button {
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #efeff1;
+}
+.index-catalog-block {
+  padding-bottom: 80px;
+}
+.index-catalog-block h2 {
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.index-catalog-block .list {
+  margin: 0 -12px;
+}
+.index-catalog-block .list .item {
+  margin: 0 12px;
+}
+.index-catalog-block .list .item .badges {
+  margin-bottom: 12px;
+}
+.index-catalog-block .list .item .badges span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px;
+}
+.index-catalog-block .list .item .badges span.hot {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/hit.svg');
+  width: 24px;
+}
+.index-catalog-block .list .item .badges span.discount {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/discount.svg');
+  width: 24px;
+}
+.index-catalog-block .list .item .badges span.hit {
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: #efeff1;
+  padding: 0 6px;
+  font-family: "GT Eesti Pro Display Medium";
+  color: #606972;
+  font-size: 10px;
+}
+.index-catalog-block .list .item .links {
+  margin-bottom: 12px;
+}
+.index-catalog-block .list .item .links a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.index-catalog-block .list .item .links a:nth-child(1) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-link1.svg');
+}
+.index-catalog-block .list .item .links a:nth-child(2) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-link2.svg');
+}
+.index-catalog-block .list .item .image {
+  text-align: center;
+  line-height: 225px;
+  margin-bottom: 28px;
+}
+.index-catalog-block .list .item .image img {
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 100%;
+}
+.index-catalog-block .list .item .price {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 23.94px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.index-catalog-block .list .item .split {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.index-catalog-block .list .item .split span {
+  display: inline-block;
+  height: 18px;
+  line-height: 20px;
+  border-radius: 32px;
+  background: #edeff2 url('https://osanov.shop/bitrix/templates/osanov/html/img/split.svg') no-repeat 2px 50%;
+  padding: 0 3px 0 18px;
+}
+.index-catalog-block .list .item p {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+.index-catalog-block .list .item button {
+  width: 92px;
+  height: 32px;
+  border-radius: 10px;
+  background: #6c57ed url('https://osanov.shop/bitrix/templates/osanov/html/img/cart.svg') no-repeat center;
+  vertical-align: middle;
+  margin: -4px 12px 0 0;
+}
+.index-catalog-block .list .item .items {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ff8a00;
+  font-size: 12px;
+  line-height: 16px;
+}
+.index-catalog-block .list .item .items.other {
+  color: #449c2e;
+}
+.index-catalog-block .list .slick-prev,
+.index-catalog-block .list .slick-next {
+  position: absolute;
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  top: -60px;
+}
+.index-catalog-block .list .slick-prev {
+  right: 60px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/prev2.svg');
+}
+.index-catalog-block .list .slick-next {
+  right: 8px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/next2.svg');
+}
+.index-catalog-block .list .slick-dots {
+  text-align: center;
+  padding-top: 8px;
+}
+.index-catalog-block .list .slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.index-catalog-block .list .slick-dots li.slick-active button {
+  background: #9593f3;
+  width: 24px;
+}
+.index-catalog-block .list .slick-dots li button {
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #efeff1;
+}
+.index-page-banner {
+  padding-bottom: 80px;
+}
+.index-page-banner .banner {
+  height: 350px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+}
+.clips-block {
+  padding-bottom: 80px;
+}
+.clips-block h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.clips-block .list {
+  margin: 0 -12px;
+}
+.clips-block .list .item {
+  margin: 0 12px;
+}
+.clips-block .list .item img {
+  width: 100%;
+  margin-bottom: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.clips-block .list .item .count {
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 7px 12px 5px 34px;
+  border-radius: 24px;
+  background: #efeff1 url('https://osanov.shop/bitrix/templates/osanov/html/img/eye.svg') no-repeat 12px 50%;
+}
+.clips-block .list .item h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.clips-block .list .slick-prev,
+.clips-block .list .slick-next {
+  position: absolute;
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  top: -60px;
+}
+.clips-block .list .slick-prev {
+  right: 64px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/prev2.svg');
+}
+.clips-block .list .slick-next {
+  right: 12px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/next2.svg');
+}
+.brands-block {
+  padding-bottom: 80px;
+}
+.brands-block h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.brands-block .list {
+  margin: 0 -12px;
+}
+.brands-block .list .item {
+  margin: 0 12px;
+}
+.brands-block .list .slick-prev,
+.brands-block .list .slick-next {
+  position: absolute;
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  top: -60px;
+}
+.brands-block .list .slick-prev {
+  right: 64px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/prev2.svg');
+}
+.brands-block .list .slick-next {
+  right: 12px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/next2.svg');
+}
+.shops-block {
+  padding-bottom: 80px;
+}
+.shops-block h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.shops-block .list {
+  margin: 0 -12px;
+}
+.shops-block .list .item {
+  margin: 0 12px;
+}
+.shops-block .list .item img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.shops-block .list .item .adress {
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.shops-block .list .item .metro span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+  padding: 4px 8px 4px 22px;
+  border-radius: 16px;
+  background: #efeff1;
+  margin: 0 5px 5px 0;
+}
+.shops-block .list .item .metro span.color1:before {
+  background: #60da00;
+}
+.shops-block .list .item .metro span.color2:before {
+  background: #6223e9;
+}
+.shops-block .list .item .metro span.color3:before {
+  background: #ff77a8;
+}
+.shops-block .list .item .metro span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.shops-block .list .slick-dots {
+  text-align: center;
+  padding-top: 8px;
+}
+.shops-block .list .slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.shops-block .list .slick-dots li.slick-active button {
+  background: #9593f3;
+  width: 24px;
+}
+.shops-block .list .slick-dots li button {
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #efeff1;
+}
+.article {
+  padding-bottom: 70px;
+}
+.article h2 {
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.article p {
+  margin-bottom: 24px;
+  color: #4b5661;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 16px;
+}
+.footer {
+  background: #f7f8f9;
+  padding: 40px 0 20px;
+}
+.footer .subscribe {
+  width: 75.5%;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: linear-gradient(122.47deg, #f78168 1.28%, #ffbd5a 99.282%);
+  color: #fff;
+  padding: 20px 24px;
+}
+.footer .subscribe h3 {
+  font-family: "GT Eesti Pro Display Medium";
+  margin-bottom: 8px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.footer .subscribe p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer .subscribe form {
+  position: relative;
+}
+.footer .subscribe form input[type='text'] {
+  width: 100%;
+  height: 51px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0 16px;
+  color: #fff;
+  font-size: 18px;
+}
+.footer .subscribe form button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6px;
+  width: 128px;
+  height: 40px;
+  color: #fff;
+  border-radius: 27px;
+  background: #7471ff;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.footer .subscribe form button span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/btn.svg');
+  margin: -2px 2px 0 0;
+}
+.footer .buttons {
+  width: 23.5%;
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footer .buttons p {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.footer .buttons button {
+  width: 100%;
+  height: 48px;
+  border-radius: 31px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.footer .buttons button.b1 {
+  color: #fff;
+  background: #7471ff;
+  margin-bottom: 8px;
+}
+.footer .buttons button.b1 span {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/btn2.svg');
+}
+.footer .buttons button.b2 {
+  color: #7471ff;
+  background: #dfdff5;
+}
+.footer .buttons button.b2 span {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/btn3.svg');
+}
+.footer .buttons button span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin: -2px 4px 0 0;
+}
+.footer nav {
+  background: #fff;
+  width: 75.5%;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+.footer nav .item {
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 24px;
+}
+.footer nav .item h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer nav .item ul li {
+  margin-bottom: 12px;
+}
+.footer nav .item ul li a {
+  display: block;
+  text-decoration: none;
+  color: #9298a0;
+  line-height: 20px;
+}
+.footer .contacts {
+  width: 23.5%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  padding: 24px;
+}
+.footer .contacts .phone {
+  margin-bottom: 10px;
+  color: #9298a0;
+  line-height: 20px;
+}
+.footer .contacts .phone a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.footer .contacts .mess {
+  margin-bottom: 10px;
+}
+.footer .contacts .hours {
+  margin-bottom: 10px;
+  color: #9298a0;
+  line-height: 20px;
+}
+.footer .contacts .hours p {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer .contacts .shops {
+  color: #9298a0;
+  line-height: 20px;
+}
+.footer .contacts .shops p {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer .ratings {
+  width: 100%;
+}
+.footer .ratings .item {
+  width: 16%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  padding: 16px;
+  position: relative;
+  color: #606972;
+  line-height: 20px;
+}
+.footer .ratings .item img {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.footer .ratings .item h3 {
+  color: #000;
+  margin-bottom: 12px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer .social {
+  width: 100%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.footer .social a {
+  display: inline-block;
+}
+.footer .social a:not(:last-child) {
+  margin-right: 12px;
+}
+.footer .copy {
+  width: 100%;
+  text-align: center;
+  color: #9298a0;
+  font-size: 12px;
+  line-height: 16px;
+}
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 30;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 52px 0 20px;
+  display: none;
+}
+.mobile-menu .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 23px;
+  height: 23px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/close.svg');
+  z-index: 8;
+}
+.mobile-menu form {
+  position: relative;
+  margin-bottom: 24px;
+  height: 36px;
+  z-index: 5;
+}
+.mobile-menu form input[type='text'] {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ebebeb;
+  border-radius: 24px;
+  padding: 0 16px;
+}
+.mobile-menu form button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/search.svg');
+}
+.mobile-menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 12px;
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+}
+.mobile-menu ul li a:hover {
+  color: #7471ff;
+}
+.mobile-menu ul li a:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #7471ff;
+}
+.mobile-menu ul li .sub {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 115px 0 20px;
+  display: none;
+}
+.mobile-menu ul li .sub .back-link {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 23px;
+  height: 23px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/back.svg');
+  padding: 0;
+}
+.mobile-menu ul li .sub ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 16px;
+}
+.navi {
+  margin-bottom: 25px;
+  color: #9ca2a7;
+  line-height: 16px;
+}
+.navi a {
+  text-decoration: none;
+  color: #9ca2a7;
+}
+h1 {
+  margin-bottom: 25px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.delivery-page {
+  padding-bottom: 30px;
+}
+.delivery-page h3 {
+  font-family: "GT Eesti Pro Display Medium";
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.delivery-page p {
+  max-width: 818px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 19px;
+}
+.delivery-page .image {
+  margin-bottom: 30px;
+}
+.delivery-page .image img {
+  width: 100%;
+}
+.delivery-page ol {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  list-style: decimal;
+  max-width: 818px;
+}
+.delivery-page ol li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 19px;
+}
+.delivery-page ol li .text {
+  display: block;
+  margin: 20px 0 0 -20px;
+}
+.delivery-page ul {
+  padding-left: 30px;
+  list-style: disc;
+  margin-bottom: 30px;
+}
+.delivery-page ul li {
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 19px;
+}
+.search-page {
+  padding-bottom: 35px;
+}
+.search-page .list .item {
+  width: 15%;
+  margin-bottom: 25px;
+}
+.search-page .list .item .badges {
+  margin-bottom: 12px;
+}
+.search-page .list .item .badges span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px;
+}
+.search-page .list .item .badges span.hot {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/hit.svg');
+  width: 24px;
+}
+.search-page .list .item .badges span.discount {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/discount.svg');
+  width: 24px;
+}
+.search-page .list .item .badges span.hit {
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: #efeff1;
+  padding: 0 6px;
+  font-family: "GT Eesti Pro Display Medium";
+  color: #606972;
+  font-size: 10px;
+}
+.search-page .list .item .links {
+  margin-bottom: 12px;
+}
+.search-page .list .item .links a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.search-page .list .item .links a:nth-child(1) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-link1.svg');
+}
+.search-page .list .item .links a:nth-child(2) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-link2.svg');
+}
+.search-page .list .item .image {
+  text-align: center;
+  line-height: 225px;
+  margin-bottom: 28px;
+}
+.search-page .list .item .image img {
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 100%;
+}
+.search-page .list .item .price {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 23.94px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.search-page .list .item .split {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.search-page .list .item .split span {
+  display: inline-block;
+  height: 18px;
+  line-height: 20px;
+  border-radius: 32px;
+  background: #edeff2 url('https://osanov.shop/bitrix/templates/osanov/html/img/split.svg') no-repeat 2px 50%;
+  padding: 0 3px 0 18px;
+}
+.search-page .list .item p {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+.search-page .list .item button {
+  width: 92px;
+  height: 32px;
+  border-radius: 10px;
+  background: #6c57ed url('https://osanov.shop/bitrix/templates/osanov/html/img/cart.svg') no-repeat center;
+  vertical-align: middle;
+  margin: -4px 12px 0 0;
+}
+.search-page .list .item .items {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ff8a00;
+  font-size: 12px;
+  line-height: 16px;
+}
+.search-page .list .item .items.other {
+  color: #449c2e;
+}
+.popup {
+  border-radius: 24px;
+}
+.popup h2 {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.popup h3 {
+  margin: 28px 0 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.popup input[type='text'] {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #9ca2a7;
+  border-radius: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  padding: 0 24px;
+}
+.popup .flex input[type='text'] {
+  width: 49%;
+}
+.popup textarea {
+  width: 100%;
+  height: 133px;
+  border: 1px solid #9ca2a7;
+  border-radius: 24px;
+  padding: 20px 24px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.popup .button {
+  width: 214px;
+  height: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 24px;
+  background: #7471ff;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.popup .bottom-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+.popup .bottom-text a {
+  color: #7471ff;
+  text-decoration: none;
+}
+.contacts-page {
+  padding-bottom: 60px;
+}
+.contacts-page .contacts {
+  width: 27%;
+}
+.contacts-page .contacts .flex {
+  max-width: 300px;
+}
+.contacts-page .contacts .phone {
+  margin-bottom: 20px;
+  color: #9298a0;
+  line-height: 20px;
+}
+.contacts-page .contacts .phone a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.contacts-page .contacts .mess {
+  margin-bottom: 20px;
+}
+.contacts-page .contacts .hours {
+  margin-bottom: 20px;
+  color: #9298a0;
+  line-height: 20px;
+}
+.contacts-page .contacts .hours p {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contacts-page .contacts .shops {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.contacts-page .contacts .shops p {
+  color: #9298a0;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.contacts-page .contacts .social a {
+  display: inline-block;
+}
+.contacts-page .contacts .social a:not(:last-child) {
+  margin-right: 10px;
+}
+.contacts-page .map {
+  width: 70%;
+  border: 1px solid #ebebeb;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.item-page {
+  padding-bottom: 80px;
+}
+.item-page h1 {
+  margin-bottom: 50px;
+}
+.item-page .photos {
+  width: 67%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 120px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.item-page .photos .badges {
+  position: absolute;
+  left: 120px;
+  top: 0;
+  z-index: 3;
+}
+.item-page .photos .badges span {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 14px;
+  border-radius: 45.69px;
+  margin-right: 5px;
+}
+.item-page .photos .badges span.hit {
+  background: #efeff1;
+  color: #606972;
+}
+.item-page .photos .badges span.new {
+  background: #def4bf;
+  color: #449c2e;
+}
+.item-page .photos .slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
+  width: 72px;
+}
+.item-page .photos .slider-nav .item {
+  margin: 4px 0;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+.item-page .photos .slider-nav .item img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 51px;
+  max-height: 51px;
+}
+.item-page .photos .slider-nav .slick-prev,
+.item-page .photos .slider-nav .slick-next {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+}
+.item-page .photos .slider-nav .slick-prev {
+  top: -37px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/prev3.svg');
+}
+.item-page .photos .slider-nav .slick-next {
+  bottom: -37px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/next3.svg');
+}
+.item-page .photos .slider-for .item {
+  padding: 42px 0;
+  text-align: center;
+}
+.item-page .photos .slider-for .item img {
+  display: inline-block;
+}
+.item-page .photos .slider-for .slick-dots {
+  text-align: center;
+  display: none !important;
+  padding-top: 8px;
+}
+.item-page .photos .slider-for .slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.item-page .photos .slider-for .slick-dots li.slick-active button {
+  background: #9593f3;
+  width: 24px;
+}
+.item-page .photos .slider-for .slick-dots li button {
+  padding: 0;
+  font-size: 0;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #efeff1;
+}
+.item-page .info {
+  width: 31%;
+  margin-bottom: 96px;
+}
+.item-page .info .block1 {
+  border: 1px solid #c6cfd7;
+  border-radius: 24px;
+  padding: 28px 24px;
+  margin-bottom: 12px;
+}
+.item-page .info .block1 .links {
+  margin-bottom: 24px;
+}
+.item-page .info .block1 .links a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  height: 20px;
+  line-height: 22px;
+  padding-left: 24px;
+}
+.item-page .info .block1 .links a:nth-child(1) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-page-link1.svg') no-repeat left;
+}
+.item-page .info .block1 .links a:nth-child(2) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-page-link2.svg') no-repeat left;
+}
+.item-page .info .block1 .links a:nth-child(3) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-page-link3.svg') no-repeat left;
+}
+.item-page .info .block1 .links a:not(:last-child) {
+  margin-right: 30px;
+}
+.item-page .info .block1 .price {
+  margin-bottom: 4px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 44px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.item-page .info .block1 .att {
+  margin-bottom: 28px;
+  height: 20px;
+  line-height: 22px;
+  padding-left: 24px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/att.svg') no-repeat left;
+  color: #ff8a00;
+}
+.item-page .info .block1 .buttons {
+  margin-bottom: 26px;
+}
+.item-page .info .block1 .buttons button {
+  width: 48.5%;
+  height: 48px;
+  border-radius: 24px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.item-page .info .block1 .buttons button:nth-child(1) {
+  background: #7471ff;
+  color: #fff;
+}
+.item-page .info .block1 .buttons button:nth-child(2) {
+  background: #dfdff5;
+  color: #7471ff;
+}
+.item-page .info .block1 table {
+  width: 100%;
+  border-top: 1px solid #c6cfd7;
+}
+.item-page .info .block1 table tr td {
+  padding: 16px 0 0 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "GT Eesti Pro Display Light";
+}
+.item-page .info .block1 table tr td:last-child {
+  text-align: right;
+}
+.item-page .info .block1 table tr td.blue {
+  color: #7471ff;
+}
+.item-page .info .block2 {
+  border: 1px solid #c6cfd7;
+  border-radius: 24px;
+  padding: 28px 24px;
+}
+.item-page .info .block2 .tabNavigation {
+  margin-bottom: 20px;
+  border-radius: 24px;
+  background: #e1e1e1;
+  padding: 4px 5px;
+}
+.item-page .info .block2 .tabNavigation li {
+  width: 33.33334%;
+}
+.item-page .info .block2 .tabNavigation li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 6px 4px 6px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  color: #9ca2a7;
+  font-size: 16px;
+  line-height: 19px;
+}
+.item-page .info .block2 .tabNavigation li a.selected {
+  color: #000;
+  background: #fff;
+}
+.item-page .info .block2 .price {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.item-page .info .block2 .items {
+  padding-bottom: 19px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #c6cfd7;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 20px;
+}
+.item-page .info .block2 .items .today {
+  width: 25%;
+}
+.item-page .info .block2 .items .today .blocks .block {
+  background: #7471ff;
+}
+.item-page .info .block2 .items .after {
+  width: 72%;
+}
+.item-page .info .block2 .items .blocks {
+  margin-bottom: 12px;
+}
+.item-page .info .block2 .items .blocks.five .block {
+  width: 19%;
+}
+.item-page .info .block2 .items .blocks.four .block {
+  width: 24%;
+}
+.item-page .info .block2 .items .blocks.three .block {
+  width: 32.5%;
+}
+.item-page .info .block2 .items .blocks .block {
+  height: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #e1e1e1;
+  width: 100%;
+}
+.item-page .info .block2 .comission {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "GT Eesti Pro Display Light";
+  line-height: 20px;
+  padding: 4px 0;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/arrow2.svg') no-repeat right;
+}
+.item-page .info .block2 .bottom-block button {
+  width: 123px;
+  height: 30px;
+  border-radius: 24px;
+  background: #dfdff5;
+  color: #7471ff;
+  font-size: 12px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.item-page .info .block2 .bottom-block .link {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/info.svg');
+}
+.item-page .index-catalog-block {
+  padding-bottom: 32px;
+}
+.item-page .bottom-info .r-tabs-nav {
+  border-bottom: 1px solid #c6cfd7;
+  margin-bottom: 40px;
+}
+.item-page .bottom-info .r-tabs-nav li {
+  display: inline-block;
+}
+.item-page .bottom-info .r-tabs-nav li.r-tabs-state-active a {
+  color: #000;
+}
+.item-page .bottom-info .r-tabs-nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 40px;
+  color: rgba(0, 16, 32, 0.5);
+  font-size: 24px;
+  line-height: 28px;
+}
+.item-page .bottom-info .r-tabs-accordion-title {
+  display: none;
+  text-decoration: none;
+  padding: 12px 40px 12px 0;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/arrow3.svg') no-repeat right;
+}
+.item-page .bottom-info .r-tabs-accordion-title.r-tabs-state-active {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/arrow3a.svg') no-repeat right;
+}
+.item-page .bottom-info .r-tabs-accordion-title a {
+  display: block;
+  text-decoration: none;
+}
+.item-page .bottom-info .r-tabs-panel {
+  display: none;
+}
+.item-page .bottom-info .r-tabs-panel.r-tabs-state-active {
+  display: block;
+}
+.item-page .bottom-info .reviews .list {
+  width: 63%;
+}
+.item-page .bottom-info .reviews .list .item {
+  padding: 28px 24px;
+  margin-bottom: 16px;
+}
+.item-page .bottom-info .reviews .list .item .author {
+  margin-bottom: 32px;
+}
+.item-page .bottom-info .reviews .list .item .author div {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "GT Eesti Pro Display Medium";
+  font-weight: 500;
+  line-height: 16px;
+}
+.item-page .bottom-info .reviews .list .item .author div .date {
+  display: block;
+  margin-top: 4px;
+  font-family: "GT Eesti Pro Display Light";
+  color: #606972;
+}
+.item-page .bottom-info .reviews .list .item .author div .name {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  line-height: 48px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  font-family: "GT Eesti Pro Display Medium";
+  margin-right: 8px;
+  font-size: 20px;
+}
+.item-page .bottom-info .reviews .list .item .count {
+  margin-bottom: 32px;
+}
+.item-page .bottom-info .reviews .list .item .count .likes {
+  line-height: 36px;
+  padding-left: 40px;
+  margin-right: 19px;
+  position: relative;
+  display: inline-block;
+}
+.item-page .bottom-info .reviews .list .item .count .likes:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/like.svg') no-repeat center;
+}
+.item-page .bottom-info .reviews .list .item .count .likes span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 38px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #def4bf;
+  color: #449c2e;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.item-page .bottom-info .reviews .list .item .count .nolikes {
+  line-height: 36px;
+  padding-left: 40px;
+  position: relative;
+  display: inline-block;
+}
+.item-page .bottom-info .reviews .list .item .count .nolikes:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/nolike.svg') no-repeat center;
+}
+.item-page .bottom-info .reviews .list .item .count .nolikes span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 38px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #f1e4ea;
+  color: #ff758e;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.item-page .bottom-info .reviews .list .item .rating {
+  margin-bottom: 24px;
+}
+.item-page .bottom-info .reviews .list .item .rating i {
+  display: inline-block;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/star.svg');
+  width: 21px;
+  height: 20px;
+}
+.item-page .bottom-info .reviews .list .item h4 {
+  margin-bottom: 8px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.item-page .bottom-info .reviews .list .item p {
+  font-family: "GT Eesti Pro Display Light";
+  font-size: 16px;
+  line-height: 16px;
+}
+.item-page .bottom-info .reviews .list .item p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.item-page .bottom-info .reviews .result {
+  width: 34%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 28px 24px;
+}
+.item-page .bottom-info .reviews .result .count {
+  width: 126px;
+  margin-bottom: 32px;
+  font-family: "GT Eesti Pro Display Light";
+  font-size: 14px;
+  line-height: 16px;
+}
+.item-page .bottom-info .reviews .result .count span {
+  display: block;
+  font-family: "GT Eesti Pro Display Medium";
+  margin-bottom: 16px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.item-page .bottom-info .reviews .result .items {
+  width: calc(100% - 155px);
+  margin-bottom: 32px;
+}
+.item-page .bottom-info .reviews .result .items .item .stars {
+  width: 80px;
+}
+.item-page .bottom-info .reviews .result .items .item .stars i {
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/star2.svg');
+}
+.item-page .bottom-info .reviews .result .items .item .line {
+  width: calc(100% - 120px);
+  height: 3px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #e7e7e7;
+  margin-top: 6px;
+  position: relative;
+}
+.item-page .bottom-info .reviews .result .items .item .line span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #fed731;
+}
+.item-page .bottom-info .reviews .result .items .item .number {
+  font-size: 16px;
+  width: 12px;
+}
+.item-page .bottom-info .reviews .result button {
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  border-radius: 24px;
+  background: #7471ff;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.item-page .bottom-info .about .text {
+  width: 60%;
+  font-family: "GT Eesti Pro Display Light";
+  font-size: 16px;
+  line-height: 19px;
+}
+.item-page .bottom-info .about .text h3 {
+  font-family: "GT Eesti Pro Display Medium";
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.item-page .bottom-info .about .text p {
+  margin-bottom: 20px;
+}
+.item-page .bottom-info .about .text ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+.item-page .bottom-info .about .text ul li {
+  margin-bottom: 20px;
+}
+.item-page .bottom-info .about .video {
+  width: 34%;
+}
+.item-page .bottom-info .about .video img {
+  width: 100%;
+}
+.item-page .bottom-info .params h3 {
+  margin-bottom: 20px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.item-page .bottom-info .params .list {
+  padding-bottom: 20px;
+}
+.item-page .bottom-info .params .list .item {
+  margin-bottom: 20px;
+  padding-left: 480px;
+  position: relative;
+  font-family: "GT Eesti Pro Display Light";
+  font-size: 16px;
+  line-height: 19px;
+}
+.item-page .bottom-info .params .list .item label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 470px;
+  color: #606972;
+}
+.item-page .bottom-info .params .list .item label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 100%;
+  border-bottom: 1px dashed #c6cfd7;
+}
+.item-page .bottom-info .params .list .item label span {
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  padding-right: 5px;
+}
+.cart-page .content {
+  background: #fff;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  padding: 40px 490px 40px 40px;
+  position: relative;
+}
+.cart-page .content .clear-link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-family: "GT Eesti Pro Display Light";
+  color: #9ca2a7;
+  font-size: 16px;
+  line-height: 16px;
+}
+.cart-page .content .list {
+  border-bottom: 1px solid #c6cfd7;
+  margin-bottom: 40px;
+}
+.cart-page .content .list .item {
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 158px;
+}
+.cart-page .content .list .item .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 132px;
+}
+.cart-page .content .list .item .image img {
+  width: 100%;
+}
+.cart-page .content .list .item .info h3 {
+  margin: 4px 0 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.cart-page .content .list .item .info .color {
+  padding: 5px 0;
+  margin-bottom: 4px;
+  font-family: "GT Eesti Pro Display Light";
+  font-size: 14px;
+  line-height: 16px;
+}
+.cart-page .content .list .item .info .color span {
+  color: #606972;
+}
+.cart-page .content .list .item .info .shops {
+  padding: 5px 0;
+  margin-bottom: 4px;
+  font-family: "GT Eesti Pro Display Light";
+  font-size: 14px;
+  line-height: 16px;
+  color: #7471ff;
+}
+.cart-page .content .list .item .info .shops span {
+  color: #606972;
+}
+.cart-page .content .list .item .info .att {
+  margin-bottom: 16px;
+  height: 20px;
+  line-height: 22px;
+  padding-left: 24px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/att.svg') no-repeat left;
+  color: #ff8a00;
+}
+.cart-page .content .list .item .info .links a {
+  display: inline-block;
+  text-decoration: none;
+  height: 20px;
+  line-height: 22px;
+  padding-left: 24px;
+  font-family: "GT Eesti Pro Display Light";
+  color: #acb2b6;
+}
+.cart-page .content .list .item .info .links a:not(:last-child) {
+  margin-right: 16px;
+}
+.cart-page .content .list .item .info .links a:nth-child(1) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/cart-link1.svg') no-repeat 0 0;
+}
+.cart-page .content .list .item .info .links a:nth-child(2) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/cart-link2.svg') no-repeat 0 0;
+}
+.cart-page .content .list .item .right-block {
+  text-align: right;
+}
+.cart-page .content .list .item .right-block .price {
+  margin: 4px 0 15px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.cart-page .content .list .item .right-block .number {
+  position: relative;
+  display: inline-block;
+  width: 98px;
+  height: 32px;
+}
+.cart-page .content .list .item .right-block .number input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: none;
+  border: 1px solid #9ca2a7;
+  border-radius: 16px;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+}
+.cart-page .content .list .item .right-block .number span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.cart-page .content .list .item .right-block .number span.plus {
+  left: 16px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/plus.svg');
+}
+.cart-page .content .list .item .right-block .number span.minus {
+  right: 16px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/minus.svg');
+}
+.cart-page .content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.cart-page .content .fields {
+  padding-bottom: 28px;
+}
+.cart-page .content .fields input[type='text'] {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #9ca2a7;
+  border-radius: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  padding: 0 24px;
+}
+.cart-page .content .fields .flex input[type='text'] {
+  width: 49%;
+}
+.cart-page .content .select.other {
+  padding-bottom: 28px;
+}
+.cart-page .content .select .radio {
+  display: none;
+}
+.cart-page .content .select .radio + label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 12px 12px 0;
+  line-height: 19px;
+  height: 17px;
+  padding-left: 25px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/radio.svg') no-repeat 0 0;
+  font-size: 16px;
+  font-family: "GT Eesti Pro Display Light";
+}
+.cart-page .content .select .radio:checked + label {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/radio2.svg') no-repeat 0 0;
+}
+.cart-page .content .shop {
+  max-width: 706px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 24px;
+  background: #fff;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+}
+.cart-page .content .shop .data {
+  width: 49%;
+}
+.cart-page .content .shop .data h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.cart-page .content .shop .data .hours {
+  margin-bottom: 16px;
+  color: #606972;
+  line-height: 20px;
+}
+.cart-page .content .shop .data .date {
+  margin-bottom: 25px;
+  color: #606972;
+  line-height: 20px;
+}
+.cart-page .content .shop .data button {
+  width: 157px;
+  height: 36px;
+  background: none;
+  border: 1px solid #7471ff;
+  border-radius: 24px;
+  color: #6c57ed;
+}
+.cart-page .content .shop .map {
+  width: 49%;
+  position: relative;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.cart-page .content .shop .map .adress {
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  left: 12px;
+  width: calc(100% - 24px);
+  padding: 10px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  z-index: 3;
+  line-height: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cart-page .content textarea {
+  width: 100%;
+  height: 133px;
+  border: 1px solid #9ca2a7;
+  border-radius: 24px;
+  padding: 20px 24px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.cart-page .content .button {
+  width: 214px;
+  height: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 24px;
+  background: #7471ff;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.cart-page .content .bottom-text {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "GT Eesti Pro Display Light";
+}
+.cart-page .content .bottom-text a {
+  color: #7471ff;
+  text-decoration: none;
+}
+.cart-page .content .result {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 417px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background: #f7f7f7;
+  padding: 28px 24px;
+}
+.cart-page .content .result .number {
+  margin-bottom: 24px;
+  font-family: "GT Eesti Pro Display Light";
+  color: #606972;
+  font-size: 16px;
+  line-height: 16px;
+}
+.cart-page .content .result .number span {
+  display: block;
+  color: #000;
+  margin-top: 4px;
+  font-family: "GT Eesti Pro Display Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.cart-page .content .result .price {
+  font-family: "GT Eesti Pro Display Medium";
+  margin-bottom: 24px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.cart-page .content .result .promo {
+  margin-bottom: 14px;
+  position: relative;
+}
+.cart-page .content .result .promo input[type='text'] {
+  width: 100%;
+  height: 40px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  background: #fff;
+  padding: 0 16px;
+}
+.cart-page .content .result .promo button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4px;
+  width: 113px;
+  height: 32px;
+  border-radius: 24px;
+  background: #e7e7e7;
+  color: #9ca2a7;
+}
+.cart-page .content .result .button {
+  width: 100%;
+}
+.catalog-page {
+  padding-bottom: 80px;
+}
+.catalog-page .sort {
+  margin-bottom: 25px;
+}
+.catalog-page .sort select {
+  width: 171px;
+  height: 40px;
+  border: 1px solid #d8d9db;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 13px;
+  appearance: none;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/select.svg') no-repeat right 12px top 50%;
+}
+.catalog-page .sort .filter-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 182px);
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d8d9db;
+  border-radius: 8px;
+  color: #606972;
+  display: none;
+}
+.catalog-page .sort .filter-link span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/filter.svg');
+}
+.catalog-page .filter {
+  width: 240px;
+}
+.catalog-page .filter .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 23px;
+  height: 23px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/close.svg');
+  z-index: 8;
+  display: none;
+}
+.catalog-page .filter h2 {
+  margin-bottom: 24px;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  display: none;
+}
+.catalog-page .filter .item {
+  margin-bottom: 12px;
+}
+.catalog-page .filter .item h3 {
+  cursor: pointer;
+  font-family: "GT Eesti Pro Display Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 12px 40px 12px 0;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/arrow4.svg') no-repeat right;
+}
+.catalog-page .filter .item h3.active {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/arrow4a.svg') no-repeat right;
+}
+.catalog-page .filter .item .item-content {
+  display: none;
+}
+.catalog-page .filter .item .item-content .select .select-item {
+  margin-bottom: 12px;
+  position: relative;
+}
+.catalog-page .filter .item .item-content .select .select-item input {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+}
+.catalog-page .filter .item .item-content .select .select-item label {
+  display: block;
+  cursor: pointer;
+  padding-left: 30px;
+  color: #606972;
+  line-height: 14px;
+  font-family: "GT Eesti Pro Display Light";
+}
+.catalog-page .filter .item .item-content .price-select .flex {
+  margin-bottom: 16px;
+  position: relative;
+}
+.catalog-page .filter .item .item-content .price-select .flex input[type='text'] {
+  width: calc(50% - 13px);
+  height: 32px;
+  border: 1px solid #eeeff1;
+  border-radius: 10px;
+  padding: 0 13px;
+  font-size: 16px;
+}
+.catalog-page .filter .item .item-content .price-select .flex span {
+  width: 12px;
+  height: 2px;
+  margin-top: 15px;
+  background: #b7bdc5;
+}
+.catalog-page .filter .item .item-content .price-select .ui-widget.ui-widget-content {
+  border: 0;
+}
+.catalog-page .filter .item .item-content .price-select .ui-widget-content {
+  background: rgba(1, 1, 1, 0.05);
+}
+.catalog-page .filter .item .item-content .price-select .ui-slider-horizontal {
+  height: 4px;
+}
+.catalog-page .filter .item .item-content .price-select .ui-widget-header {
+  background: #7471ff;
+}
+.catalog-page .filter .item .item-content .price-select .ui-state-default,
+.catalog-page .filter .item .item-content .price-select .ui-widget-content .ui-state-default,
+.catalog-page .filter .item .item-content .price-select .ui-widget-header .ui-state-default,
+.catalog-page .filter .item .item-content .price-select .ui-button,
+.catalog-page .filter .item .item-content .price-select html .ui-button.ui-state-disabled:hover,
+.catalog-page .filter .item .item-content .price-select html .ui-button.ui-state-disabled:active {
+  border: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #7471ff;
+  margin: -4px 0 0 -10px;
+}
+.catalog-page .filter .buttons {
+  padding-top: 12px;
+}
+.catalog-page .filter .buttons button {
+  margin-top: 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 24px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.catalog-page .filter .buttons button:nth-child(1) {
+  background: #7471ff;
+  color: #fff;
+}
+.catalog-page .filter .buttons button:nth-child(2) {
+  background: none;
+  border: 1px solid #eeeff1;
+  color: #606972;
+}
+.catalog-page .content {
+  width: calc(100% - 272px);
+}
+.catalog-page .content .list .item {
+  width: 18%;
+  margin-bottom: 25px;
+}
+.catalog-page .content .list .item .badges {
+  margin-bottom: 12px;
+}
+.catalog-page .content .list .item .badges span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px;
+}
+.catalog-page .content .list .item .badges span.hot {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/hit.svg');
+  width: 24px;
+}
+.catalog-page .content .list .item .badges span.discount {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/discount.svg');
+  width: 24px;
+}
+.catalog-page .content .list .item .badges span.hit {
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: #efeff1;
+  padding: 0 6px;
+  font-family: "GT Eesti Pro Display Medium";
+  color: #606972;
+  font-size: 10px;
+}
+.catalog-page .content .list .item .links {
+  margin-bottom: 12px;
+}
+.catalog-page .content .list .item .links a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.catalog-page .content .list .item .links a:nth-child(1) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-link1.svg');
+}
+.catalog-page .content .list .item .links a:nth-child(2) {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/item-link2.svg');
+}
+.catalog-page .content .list .item .image {
+  text-align: center;
+  line-height: 225px;
+  margin-bottom: 28px;
+}
+.catalog-page .content .list .item .image img {
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 100%;
+}
+.catalog-page .content .list .item .price {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 23.94px;
+  font-family: "GT Eesti Pro Display Medium";
+}
+.catalog-page .content .list .item .split {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.catalog-page .content .list .item .split span {
+  display: inline-block;
+  height: 18px;
+  line-height: 20px;
+  border-radius: 32px;
+  background: #edeff2 url('https://osanov.shop/bitrix/templates/osanov/html/img/split.svg') no-repeat 2px 50%;
+  padding: 0 3px 0 18px;
+}
+.catalog-page .content .list .item p {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+.catalog-page .content .list .item button {
+  width: 92px;
+  height: 32px;
+  border-radius: 10px;
+  background: #6c57ed url('https://osanov.shop/bitrix/templates/osanov/html/img/cart.svg') no-repeat center;
+  vertical-align: middle;
+  margin: -4px 12px 0 0;
+}
+.catalog-page .content .list .item .items {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ff8a00;
+  font-size: 12px;
+  line-height: 16px;
+}
+.catalog-page .content .list .item .items.other {
+  color: #449c2e;
+}
+.catalog-page .content .pages {
+  text-align: center;
+  padding-top: 24px;
+}
+.catalog-page .content .pages a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  line-height: 34px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "GT Eesti Pro Display Medium";
+  color: #9298a0;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.catalog-page .content .pages a.active {
+  background: #dfdff5;
+  color: #6c57ed;
+}
+.catalog-page .content .pages a.next {
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/pages-next.svg');
+}
+@media (max-width: 1450px) {
+  .wrap {
+    width: 1170px;
+  }
+  .header form {
+    width: 600px;
+  }
+  .contacts-page .contacts .shops {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .item-page .info .block1 .links a:nth-child(1) {
+    font-size: 0;
+  }
+  .catalog-page .content .list .item {
+    width: 24%;
+  }
+  .catalog-page .content .list .item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .wrap {
+    width: 970px;
+  }
+  .header form {
+    width: 400px;
+  }
+  .index-top-sliders .slider1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .index-top-sliders .slider2 {
+    width: 100%;
+  }
+  .footer .contacts .phone a {
+    font-size: 22px;
+  }
+  .search-page .list .item {
+    width: 23.5%;
+  }
+  .contacts-page .contacts {
+    width: 35%;
+  }
+  .contacts-page .map {
+    width: 62%;
+  }
+  .item-page .info .block1 .links a:not(:last-child) {
+    margin-right: 16px;
+  }
+  .item-page .info .block1 {
+    padding: 20px;
+  }
+  .item-page .info .block2 {
+    padding: 20px;
+  }
+  .item-page .photos .slider-nav {
+    display: none;
+  }
+  .item-page .photos {
+    padding-left: 0;
+  }
+  .item-page .photos .badges {
+    left: 0;
+  }
+  .item-page .photos {
+    width: 65%;
+  }
+  .item-page .photos .slider-for .slick-dots {
+    display: block !important;
+  }
+  .item-page .info {
+    width: 33%;
+  }
+  .item-page .bottom-info .reviews .result {
+    width: 41%;
+  }
+  .item-page .bottom-info .reviews .list {
+    width: 57%;
+  }
+  .cart-page .content .result {
+    width: 300px;
+    top: 30px;
+    right: 30px;
+  }
+  .cart-page .content {
+    padding: 30px 360px 30px 30px;
+  }
+  .cart-page .content .result .price {
+    font-size: 36px;
+  }
+  .catalog-page .content .list .item {
+    width: 32%;
+  }
+}
+@media (max-width: 991px) {
+  .wrap {
+    width: 747px;
+  }
+  .header .top .contacts a.city {
+    display: none;
+  }
+  .header .top ul li:not(:last-child) {
+    margin-right: 12px;
+  }
+  .header form {
+    width: 200px;
+  }
+  .header form input[type='text'] {
+    padding: 0 50px 0 16px;
+  }
+  .header .catalog .window {
+    width: 580px;
+  }
+  .header .catalog .window .tabNavigation li a {
+    padding: 10px 24px;
+  }
+  .index-page-banner .banner {
+    height: 300px;
+  }
+  .footer .wrap .subscribe {
+    width: 100%;
+    order: 1;
+  }
+  .footer .wrap .buttons {
+    width: 100%;
+    order: 2;
+  }
+  .footer .wrap nav {
+    width: 100%;
+    order: 4;
+  }
+  .footer .wrap .contacts {
+    width: 100%;
+    order: 3;
+  }
+  .footer .wrap .ratings {
+    width: 100%;
+    order: 5;
+  }
+  .footer .wrap .social {
+    width: 100%;
+    order: 6;
+  }
+  .footer .wrap .copy {
+    width: 100%;
+    order: 7;
+  }
+  .footer .ratings .item {
+    width: 32.5%;
+  }
+  .contacts-page .contacts .shops {
+    font-size: 16px;
+  }
+  .contacts-page .contacts .phone a {
+    font-size: 18px;
+  }
+  .item-page .photos {
+    width: 100%;
+  }
+  .item-page .info {
+    width: 100%;
+  }
+  .item-page .bottom-info .about .text {
+    width: 100%;
+    order: 2;
+  }
+  .item-page .bottom-info .about .video {
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .item-page .bottom-info .reviews .result {
+    padding: 0;
+    width: 100%;
+    order: 0;
+    margin-bottom: 30px;
+  }
+  .item-page .bottom-info .reviews .list {
+    width: 100%;
+    order: 1;
+  }
+  .item-page .bottom-info .reviews .list .item {
+    padding: 0;
+  }
+  .cart-page .content .result {
+    display: none;
+  }
+  .cart-page .content {
+    padding: 30px;
+  }
+  .catalog-page .content .list .item {
+    width: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .wrap {
+    width: 556px;
+  }
+  .header .top {
+    display: none;
+  }
+  .header .catalog {
+    display: none;
+  }
+  .header form {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .header .logo {
+    margin: 0;
+  }
+  .header .login {
+    display: none;
+  }
+  .header .links {
+    display: none;
+  }
+  .header .menu-button {
+    display: block;
+  }
+  .mobile-menu.opened {
+    display: block;
+  }
+  .index-top-sliders .slider1 .item {
+    height: 300px;
+  }
+  .index-page-banner .banner {
+    height: 240px;
+  }
+  .footer nav .item {
+    width: 50%;
+  }
+  .search-page .list .item {
+    width: 32%;
+  }
+  .contacts-page .contacts {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contacts-page .map {
+    width: 100%;
+    height: 390px;
+  }
+  .item-page .bottom-info .r-tabs-nav li a {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 30px;
+  }
+  .item-page .bottom-info .params .list .item {
+    padding-left: 50%;
+  }
+  .item-page .bottom-info .params .list .item label {
+    width: calc(50% - 20px);
+  }
+  .cart-page .content .list .item {
+    padding-left: 92px;
+  }
+  .cart-page .content .list .item .image {
+    width: 80px;
+  }
+  .cart-page .content .shop {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 24px 0 0 0;
+  }
+  .cart-page .content .shop .data {
+    width: 100%;
+    margin-top: 20px;
+    order: 1;
+  }
+  .cart-page .content .shop .map {
+    width: 100%;
+    order: 0;
+    height: 193px;
+  }
+  .catalog-page .content {
+    width: 100%;
+  }
+  .catalog-page .filter {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 20;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    padding: 20px 20px 92px 20px;
+    display: none;
+  }
+  .catalog-page .filter.opened {
+    display: block;
+  }
+  .catalog-page .filter h2 {
+    display: block;
+  }
+  .catalog-page .filter .close {
+    display: block;
+  }
+  .catalog-page .filter .buttons {
+    position: fixed;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .catalog-page .filter .buttons button {
+    width: 48%;
+  }
+  .catalog-page .sort {
+    width: 100%;
+    position: relative;
+  }
+  .catalog-page .sort .filter-link {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .wrap {
+    width: auto;
+    padding: 0 24px;
+  }
+  .top-menu .list a {
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 10px;
+  }
+  .index-top-sliders .slider1 .item {
+    height: 160px;
+  }
+  .index-top-sliders .slider2 .list .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .index-top-sliders .slider2 .list .item .block {
+    width: 49%;
+    height: 118px;
+  }
+  .index-top-sliders .slider2 .list .item .block img {
+    max-height: 80%;
+  }
+  .index-top-sliders .slider2 .list .item .block .text {
+    padding: 15px;
+    font-size: 12px;
+  }
+  .index-top-sliders .slider2 .list .item .block .text h3 {
+    font-size: 14px;
+  }
+  .index-top-sliders {
+    padding-bottom: 36px;
+  }
+  .footer .subscribe h3,
+  .article h2,
+  .shops-block h2,
+  .brands-block h2,
+  .clips-block h2,
+  .index-catalog-block h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .index-catalog-block .list .item .image {
+    line-height: 136px;
+    margin-bottom: 8px;
+  }
+  .index-catalog-block {
+    padding-bottom: 36px;
+  }
+  .index-page-banner {
+    padding-bottom: 36px;
+  }
+  .index-page-banner .banner {
+    height: 160px;
+  }
+  .clips-block .list {
+    margin: 0 -24px 0 0;
+  }
+  .clips-block .list .item {
+    width: 212px;
+    margin: 0 16px 0 0;
+  }
+  .clips-block {
+    padding-bottom: 36px;
+  }
+  .brands-block {
+    padding-bottom: 36px;
+  }
+  .brands-block .list {
+    margin: 0 -24px 0 0;
+  }
+  .brands-block .list .item {
+    width: 116px;
+    margin: 0 16px 0 0;
+  }
+  .shops-block {
+    padding-bottom: 36px;
+  }
+  .article p {
+    font-size: 14px;
+  }
+  .article {
+    padding-bottom: 12px;
+  }
+  .footer {
+    padding: 24px 0;
+  }
+  .footer .subscribe form button {
+    font-size: 0;
+    width: 40px;
+  }
+  .footer .subscribe form button span {
+    margin: 0;
+  }
+  .footer nav {
+    margin: 0;
+    padding: 0 0 8px 0;
+    background: none;
+  }
+  .footer nav .item {
+    width: 100%;
+    background: #fff;
+    margin: 0 0 12px 0;
+    padding: 20px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+  }
+  .footer nav .item ul {
+    display: none;
+    margin-top: 8px;
+  }
+  .footer nav .item ul.opened {
+    display: block;
+  }
+  .footer nav .item h3 {
+    cursor: pointer;
+    margin: 0;
+    background: url('https://osanov.shop/bitrix/templates/osanov/html/img/arrow.svg') no-repeat right;
+  }
+  .footer .ratings .item {
+    width: 48%;
+  }
+  .footer .wrap .social {
+    background: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 12px 0 40px 0;
+    text-align: center;
+    margin: 0;
+  }
+  .navi {
+    display: none;
+  }
+  .top-menu {
+    padding: 16px 0 24px;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .delivery-page h3 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .delivery-page p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .delivery-page ol {
+    padding-bottom: 10px;
+  }
+  .delivery-page ol li {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .delivery-page ol li .text {
+    margin: 10px 0 0 -20px;
+  }
+  .delivery-page .image {
+    margin-bottom: 20px;
+  }
+  .delivery-page .image img {
+    min-height: 160px;
+    object-fit: cover;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+  }
+  .delivery-page ul {
+    margin-bottom: 20px;
+  }
+  .delivery-page ul li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .delivery-page {
+    padding-bottom: 20px;
+  }
+  .search-page .list .item {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+  .search-page .list .item .image {
+    line-height: 136px;
+    margin-bottom: 8px;
+  }
+  .search-page {
+    padding-bottom: 16px;
+  }
+  .popup {
+    padding: 50px 24px!important;
+  }
+  .popup h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .popup .flex input[type='text'] {
+    width: 100%;
+  }
+  .contacts-page {
+    padding-bottom: 40px;
+  }
+  .contacts-page .map {
+    margin: 0 -24px;
+    border: 0;
+    width: calc(100% + 48px);
+  }
+  .item-page h1 {
+    margin-bottom: 24px;
+  }
+  .item-page .photos .slider-for .item {
+    padding: 40px 20px;
+  }
+  .item-page .info .block1 .price {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .item-page .info {
+    margin-bottom: 40px;
+  }
+  .item-page .bottom-info .r-tabs-nav {
+    display: none;
+  }
+  .item-page .bottom-info .r-tabs-accordion-title {
+    display: block;
+  }
+  .item-page .bottom-info .r-tabs-panel {
+    padding-top: 10px;
+  }
+  .item-page .bottom-info .params .list .item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .item-page .bottom-info .about .text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .item-page {
+    padding-bottom: 40px;
+  }
+  body {
+    background: #fff !important;
+  }
+  .cart-page .content {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 30px 0;
+    background: none;
+  }
+  .cart-page .content .list .item {
+    border-bottom: 1px solid #c6cfd7;
+    padding: 24px 0 24px 92px;
+  }
+  .cart-page .content .list .item .image {
+    top: 24px;
+  }
+  .cart-page .content .list .item .right-block {
+    width: calc(100% + 82px);
+    margin-top: 20px;
+    margin-left: -82px;
+    position: relative;
+  }
+  .cart-page .content .list .item .right-block .number {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .cart-page .content .list .item .right-block .price {
+    margin: 0;
+  }
+  .cart-page .content .list {
+    border: 0;
+    margin-bottom: 0;
+  }
+  .cart-page .content .fields .flex input[type='text'] {
+    width: 100%;
+  }
+  .cart-page .content .select .radio + label {
+    display: block;
+    margin: 0 0 12px 0;
+  }
+  .catalog-page .content .list .item .image {
+    line-height: 136px;
+    margin-bottom: 8px;
+  }
+  .catalog-page {
+    padding-bottom: 40px;
+  }
+}
