@@ -22,6 +22,98 @@
 .fb * {
   font-family: "GT Eesti Pro Display Bold", sans-serif;
 }
+.block2 {
+  margin-top: 12px;
+}
+.block2:first-child {
+  margin-top: 0;
+}
+.block2 .block-title {
+  line-height: 20px;
+  font-size: 18px;
+  color: #001020;
+}
+.block2 .block-title + .link {
+  margin-top: 0 !important;
+}
+.elm-stock {
+  line-height: 16px;
+  font-size: 14px;
+  padding-left: 18px;
+  position: relative;
+  display: block;
+  color: #41B54C;
+}
+.elm-stock:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background: url(../img/stock.svg) center no-repeat;
+  background-size: 100% auto;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+.elm-stock.stock-out {
+  color: #f00;
+}
+.elm-stock.stock-out:before {
+  background-image: url(../img/stock-out.svg);
+}
+.product-item-summary-info-container {
+  padding: 14px 0 0 0;
+  margin-top: 14px;
+  border-top: 1px solid #C6CFD7;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.product-item-summary-info-container .info-inner-wrap {
+  -ms-flex: 1;
+      flex: 1;
+  padding-right: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "GT Eesti Pro Display Light", sans-serif;
+}
+.product-item-summary-info-container .info-inner-wrap * {
+  font-family: "GT Eesti Pro Display Light", sans-serif;
+}
+.product-item-summary-info-container .info-logo-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 69px;
+}
+.product-item-summary-info-container .info-logo-wrap a,
+.product-item-summary-info-container .info-logo-wrap img,
+.product-item-summary-info-container .info-logo-wrap svg {
+  display: block;
+  width: 100%;
+  line-height: 1;
+}
+.product-item-summary-info-container .info-wrap,
+.product-item-summary-info-container .elm-stock {
+  margin-bottom: 10px;
+}
+.product-item-summary-info-container .info-wrap:last-child,
+.product-item-summary-info-container .elm-stock:last-child {
+  margin-bottom: 0;
+}
+.product-item-summary-info-container .elm-stock {
+  font-family: "GT Eesti Pro Display Regular", sans-serif;
+}
+.product-item-summary-info-container .elm-stock * {
+  font-family: "GT Eesti Pro Display Regular", sans-serif;
+}
+.product-item-detail-info-container:first-child a.btn.product-item-detail-buy-button {
+  background: #d7efff;
+}
+.product-item-detail-info-container:last-child a.btn.product-item-detail-buy-button {
+  background: #faddbc;
+}
 .btn-action-close {
   display: block;
   width: 32px;
