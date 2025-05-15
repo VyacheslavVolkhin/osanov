@@ -111,10 +111,12 @@
 .product-item-detail-info-container:first-child a.btn.product-item-detail-buy-button {
   background: #d7efff;
   border-color: #d7efff;
+  color: #7471FF;
 }
 .product-item-detail-info-container:last-child a.btn.product-item-detail-buy-button {
   background: #faddbc;
   border-color: #faddbc;
+  color: #7471FF;
 }
 .btn-action-close {
   display: block;
