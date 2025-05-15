@@ -122,7 +122,7 @@ new Image().src='https://garmin-lowrance.ru/bitrix/spread.php?s=QklUUklYX1NNX0dV
 
 
 <link rel="stylesheet" href="./css/style.css">
-
+<script src="./js/scripts.js"></script>
 </head>
 <body>
 
@@ -445,7 +445,7 @@ new Image().src='https://garmin-lowrance.ru/bitrix/spread.php?s=QklUUklYX1NNX0dV
                         <div class="buttons flex" id="bx_117848907_838_basket_actions">
 
                                                                     <div class="product-item-detail-info-container">
-                                        <a class="btn btn-link product-item-detail-buy-button" id="bx_117848907_838_add_basket_link" href="javascript:void(0);">
+                                        <a class="btn btn-link product-item-detail-buy-button js-popup-open" data-popup="popup-added" id="" href="">
                                             <span>В корзину</span>
                                         </a>
                                     </div>
@@ -1233,5 +1233,40 @@ Call-центр
 
     });
 </script>
+
+
+
+
+
+<div class="popup-outer-box" id="popup-added">
+	<div class="popup-box">
+		<div class="popup-title-wrap">
+			<a href="" class="btn-action-close js-popup-close"></a>
+			<div class="popup-title">Товар добавлен в&nbsp;корзину</div>
+		</div>
+		<div class="popup-content-wrap">
+			
+			<div class="popup-added-box">
+				<div class="photo-wrap">
+					<img src="./img/cart.jpg" alt="">
+				</div>
+				<div class="info-wrap">
+					<p>Детская люлька Valco baby External Bassinet для Snap Duo Trend Denim</p>
+				</div>
+				<div class="action-wrap">
+					<button class="btn b-cart">
+						Перейти в&nbsp;коризну
+						<span></span>
+					</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div><!--/popup-outer-box-->
+
+
+
+
 
 </body></html>

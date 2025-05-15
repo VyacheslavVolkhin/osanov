@@ -1,25 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
+	
+	
 	// Popups
 	let popupCurrent;
 	let popupsList = document.querySelectorAll('.popup-outer-box')
 	
 	document.querySelectorAll(".js-popup-open").forEach(function (element) {
 	  element.addEventListener("click", function (e) {
-		document.querySelector(".popup-outer-box").classList.remove("active");
-		document.body.classList.add("popup-open");
-	
-		popupCurrent = this.getAttribute("data-popup");
-		document
-		  .querySelector(
-			`.popup-outer-box[id="popupCurrent"
-			]`
-		  )
-		  .classList.add("active");
+		  document.querySelector(".popup-outer-box").classList.remove("active");
+		  document.body.classList.add("popup-open");
+		  
+		  popupCurrent = this.getAttribute("data-popup");
+		  
+		  if (popupCurrent) {
+			  document.querySelector(`.popup-outer-box[id="${popupCurrent}"]`).classList.add("active");
+		  }
+		  
 	
 		e.preventDefault();
-		e.stopPropagation();
 		return false;
 		});
 	});

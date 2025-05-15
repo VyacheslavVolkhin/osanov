@@ -1,0 +1,183 @@
+.fr {
+  font-family: "GT Eesti Pro Display Regular", sans-serif;
+}
+.fr * {
+  font-family: "GT Eesti Pro Display Regular", sans-serif;
+}
+.fm {
+  font-family: "GT Eesti Pro Display Medium", sans-serif;
+}
+.fm * {
+  font-family: "GT Eesti Pro Display Medium", sans-serif;
+}
+.fl {
+  font-family: "GT Eesti Pro Display Light", sans-serif;
+}
+.fl * {
+  font-family: "GT Eesti Pro Display Light", sans-serif;
+}
+.fb {
+  font-family: "GT Eesti Pro Display Bold", sans-serif;
+}
+.fb * {
+  font-family: "GT Eesti Pro Display Bold", sans-serif;
+}
+.btn-action-close {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/close.svg) center no-repeat;
+  background-size: 25px auto;
+}
+.btn.b-cart span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 19px;
+  background: url('https://osanov.shop/bitrix/templates/osanov/html/img/cart.svg');
+  background-size: 100% auto;
+  margin: -2px 2px 0 0;
+}
+.btn.b-cart span:last-child {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.popup-added-box {
+  display: block;
+  font-size: 19px;
+  line-height: 1.05263158;
+  color: #172431;
+  text-align: center;
+  margin: 0 auto;
+  width: 412px;
+  max-width: 100%;
+}
+.popup-added-box .photo-wrap {
+  margin: 0 auto 20px auto;
+}
+.popup-added-box .photo-wrap img {
+  display: block;
+  width: 100%;
+}
+.popup-added-box .info-wrap {
+  margin: 0 auto 20px auto;
+  max-width: 14.42105263em;
+}
+.popup-added-box .btn {
+  height: 48px;
+  border-radius: 24px;
+  background: #7471ff;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 30px;
+  min-width: 288px;
+  max-width: 100%;
+  font-family: "GT Eesti Pro Display Medium", sans-serif;
+}
+.popup-added-box .btn * {
+  font-family: "GT Eesti Pro Display Medium", sans-serif;
+}
+body.popup-open {
+  overflow: hidden;
+}
+.popup-outer-box {
+  display: none;
+  padding: 20px 10px;
+  animation: fadein ease 0.2s;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: fixed;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.popup-outer-box.active {
+  display: -ms-flexbox;
+  display: flex;
+}
+.popup-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  width: 677px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: 20;
+  padding: 35px 35px 80px 35px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.popup-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.popup-box .popup-title-wrap,
+.popup-box .popup-footer-wrap {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: center;
+}
+.popup-box .popup-title-wrap {
+  margin-bottom: 80px;
+}
+.popup-box .popup-title {
+  font-size: 35px;
+  line-height: 1.14285714;
+  color: #001020;
+  font-weight: 400;
+}
+.popup-box .btn-action-close {
+  margin: 0 auto 10px auto;
+}
+@media (max-height: 999px) {
+  .popup-box {
+    padding-bottom: 35px;
+  }
+  .popup-box .popup-title-wrap {
+    margin-bottom: 35px;
+  }
+  .popup-added-box {
+    width: 300px;
+  }
+  .popup-added-box .btn {
+    min-width: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .popup-box {
+    padding: 24px;
+    width: 400px;
+  }
+  .popup-box .popup-title {
+    font-size: 26px;
+  }
+  .popup-box .popup-title-wrap {
+    margin-bottom: 35px;
+  }
+  .popup-added-box {
+    width: 300px;
+  }
+  .popup-added-box .btn {
+    min-width: 0;
+    width: 100%;
+  }
+}
